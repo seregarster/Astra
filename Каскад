@@ -1,0 +1,11 @@
+# Установка Nginx
+
+sudo apt update
+sudo apt install -y zstd
+sudo apt upgrade
+
+sudo apt autoremove
+
+sudo apt install -y nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
