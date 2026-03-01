@@ -1,17 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<title>Please wait</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     height: 100vh;
     display: flex;
@@ -139,4 +126,3 @@ body {
 </div>
 
 </body>
-</html>
