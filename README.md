@@ -1,141 +1,73 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<title>Please wait</title>
+<div align="center">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<br><br>
 
-body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(circle at 30% 30%, #1f232a, #0e1014);
-    font-family: "Segoe UI", system-ui, sans-serif;
-    overflow: hidden;
-}
+<div style="
+width:640px;
+height:480px;
+padding:60px;
+border-radius:24px;
+background:#161a20;
+border:1px solid #2a2f36;
+box-shadow:0 25px 80px rgba(0,0,0,0.6);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+font-family:Segoe UI, system-ui, sans-serif;
+">
 
-/* Fluent окно */
-.window {
-    width: 640px;
-    height: 480px;
-    padding: 60px;
-    border-radius: 24px;
+<!-- Windows Logo -->
+<div style="
+width:64px;
+height:64px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:4px;
+margin-bottom:40px;
+">
+<div style="background:#4cc2ff;height:100%;"></div>
+<div style="background:#4cc2ff;height:100%;"></div>
+<div style="background:#4cc2ff;height:100%;"></div>
+<div style="background:#4cc2ff;height:100%;"></div>
+</div>
 
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+<div style="
+color:#e6e6e6;
+font-size:22px;
+margin-bottom:35px;
+text-align:center;
+">
+Остановите! Остановите!<br>
+Вите, Вите надо выйти...
+</div>
 
-    border: 1px solid rgba(255,255,255,0.08);
+<div style="
+width:80%;
+height:8px;
+background:#2a2f36;
+border-radius:10px;
+overflow:hidden;
+margin-bottom:25px;
+">
+<div style="
+height:100%;
+width:60%;
+background:#4cc2ff;
+border-radius:10px;
+">
+</div>
+</div>
 
-    box-shadow:
-        0 25px 80px rgba(0,0,0,0.6),
-        inset 0 1px 0 rgba(255,255,255,0.08);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Логотип Windows */
-.logo {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
-}
-
-.logo div {
-    background: #4cc2ff;
-    animation: glow 4s infinite ease-in-out;
-}
-
-.logo div:nth-child(2) { animation-delay: .5s }
-.logo div:nth-child(3) { animation-delay: 1s }
-.logo div:nth-child(4) { animation-delay: 1.5s }
-
-/* Текст */
-.text {
-    color: #e6e6e6;
-    font-size: 22px;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-/* Прогресс бар */
-.progress {
-    width: 80%;
-    height: 8px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.bar {
-    height: 100%;
-    width: 30%;
-    background: linear-gradient(90deg, #4cc2ff, #7dd3ff);
-    border-radius: 10px;
-    animation: loading 3s infinite ease-in-out;
-}
-
-/* Подтекст */
-.sub {
-    margin-top: 25px;
-    font-size: 16px;
-    color: #9aa3ad;
-    animation: fade 2s infinite ease-in-out;
-}
-
-/* Анимации */
-@keyframes loading {
-    0% { width: 10% }
-    50% { width: 70% }
-    100% { width: 10% }
-}
-
-@keyframes fade {
-    0%,100% { opacity: 0.5 }
-    50% { opacity: 1 }
-}
-
-@keyframes glow {
-    0%,100% { opacity: 0.6 }
-    50% { opacity: 1 }
-}
-</style>
-</head>
-
-<body>
-
-<div class="window">
-
-    <div class="logo">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-    <div class="text">Остановите! Остановите!<br>
-                     	Вите, Вите надо выйти...</div>
-
-    <div class="progress">
-        <div class="bar"></div>
-    </div>
-
-    <div class="sub">Вышел...</div>
+<div style="
+font-size:16px;
+color:#9aa3ad;
+">
+Вышел...
+</div>
 
 </div>
 
-</body>
-</html>
+<br><br>
+
+</div>
